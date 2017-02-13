@@ -18,6 +18,7 @@ use Illuminate\Http\Request;
 //})->middleware('auth:api');
 
 
+
 $api = app('Dingo\Api\Routing\Router');
 
 $api->version(['v1','v2'], function ($api) {
