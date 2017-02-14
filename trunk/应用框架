@@ -1,0 +1,43 @@
+跨域
+https://github.com/barryvdh/laravel-cors
+
+
+#前后端分离 http 请求
+https://github.com/imcvampire/vue-axios
+https://github.com/mzabriskie/axios
+
+#路由
+https://github.com/vuejs/vue-router
+
+#jwt
+https://github.com/tymondesigns/jwt-auth/wiki/Installation
+#dingo：http://laravelacademy.org/post/3836.html  非常好的帮助：http://www.cnblogs.com/zzdylan/p/6002503.html
+
+https://github.com/thephpleague/fractal[http://thephpleague.com/]
+
+不用
+https://github.com/gathercontent/laravel-fractal
+
+
+
+https://github.com/dingo/api/wiki/Configuration
+
+查看API routes
+php artisan api:routes
+
+快速构建 RESTful API 以及现代化 Web 应用的 Laravel 原型项目 —— Someline
+http://www.tuicool.com/articles/ANBfAfN
+
+
+An error occurred on the server when processing the URL. Please contact the system administrator.
+If you are the system administrator please click here to find out more about this error.
+
+Lumen api demo with Dingo/Api, JWT, CORS, PHPUNIT
+https://github.com/liyu001989/lumen-api-demo
+
+datatables 配套
+http://www.w2bc.com/Article/13221
+
+http://www.smart-ptt.com/ptt/
+fjjtdz
+111111

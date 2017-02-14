@@ -10,7 +10,9 @@
         "laravel/passport": "^1.0",
         "barryvdh/laravel-cors": "^0.8.2",
         "dingo/api": "1.0.*@dev",
-        "tymon/jwt-auth": "0.5.*"
+        "tymon/jwt-auth": "0.5.*",
+        "league/fractal": "^0.15.0",
+        "gathercontent/laravel-fractal": "~1.0"
 
     },
     "require-dev": {

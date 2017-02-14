@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c68a8004c763da9718cfd3c9ecddfdad",
-    "content-hash": "984d92c62a0f1837891d067408c93f44",
+    "hash": "bf9c99ad76e96866889ced8ce6a9a14b",
+    "content-hash": "f173d538151218f79e3634aa8cd26c1c",
     "packages": [
         {
             "name": "barryvdh/laravel-cors",
@@ -190,22 +190,22 @@
         },
         {
             "name": "dingo/blueprint",
-            "version": "v0.2.1",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dingo/blueprint.git",
-                "reference": "53c2e553e2cb1284d5736f0bd264599ba89c376f"
+                "reference": "690bdf0f76b4428fd52835b9d778fb4551333867"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://packagist.phpcomposer.com/files/dingo/blueprint/53c2e553e2cb1284d5736f0bd264599ba89c376f.zip",
-                "reference": "53c2e553e2cb1284d5736f0bd264599ba89c376f",
+                "url": "https://packagist.phpcomposer.com/files/dingo/blueprint/690bdf0f76b4428fd52835b9d778fb4551333867.zip",
+                "reference": "690bdf0f76b4428fd52835b9d778fb4551333867",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "~1.2",
-                "illuminate/filesystem": "5.1.* || 5.2.* || 5.3.*",
-                "illuminate/support": "5.1.* || 5.2.* || 5.3.*",
+                "illuminate/filesystem": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
+                "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
                 "php": ">=5.5.9",
                 "phpdocumentor/reflection-docblock": "3.1.*"
             },
@@ -242,7 +242,7 @@
                 "docs",
                 "laravel"
             ],
-            "time": "2016-12-27 21:55:37"
+            "time": "2017-02-11 17:28:57"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -508,6 +508,50 @@
             "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
             "homepage": "https://github.com/firebase/php-jwt",
             "time": "2016-07-18 04:51:16"
+        },
+        {
+            "name": "gathercontent/laravel-fractal",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gathercontent/laravel-fractal.git",
+                "reference": "60f65319a8ada6e9b458518c7f965680585006cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/gathercontent/laravel-fractal/60f65319a8ada6e9b458518c7f965680585006cd.zip",
+                "reference": "60f65319a8ada6e9b458518c7f965680585006cd",
+                "shasum": ""
+            },
+            "require": {
+                "league/fractal": "~0.8",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "illuminate/support": "4.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "GatherContent\\LaravelFractal\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Cairns",
+                    "email": "andrew@gathercontent.com"
+                }
+            ],
+            "description": "A Laravel Service Provider for Fractal",
+            "keywords": [
+                "fractal",
+                "laravel"
+            ],
+            "time": "2016-11-29 14:39:08"
         },
         {
             "name": "guzzlehttp/guzzle",

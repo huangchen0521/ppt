@@ -101,7 +101,6 @@ class UserController extends Controller
      */
     public function addUser(\Request $request)
     {
-
         return view('admin.user.userInfo', ['name' => 'James']);
 
     }

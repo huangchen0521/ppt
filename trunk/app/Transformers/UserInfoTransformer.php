@@ -16,7 +16,7 @@ use League\Fractal\TransformerAbstract;
  * @package App\Transformers
  */
 
-class UserTransformer extends TransformerAbstract
+class UserInfoTransformer extends TransformerAbstract
 {
     protected $availableIncludes = [];
 
@@ -25,8 +25,8 @@ class UserTransformer extends TransformerAbstract
     public function transform(UserInfo $user)
     {
         return [
-            'username' =>$user['name'],
-            'email' => $user['email'],
+            'username' =>2,
+            'email' =>2,
         ];
     }
 }

@@ -181,7 +181,7 @@ return [
         Barryvdh\Cors\ServiceProvider::class,
         Dingo\Api\Provider\LaravelServiceProvider::class,
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
-       // GatherContent\LaravelFractal\LaravelFractalServiceProvider::class
+        GatherContent\LaravelFractal\LaravelFractalServiceProvider::class,
     ],
 
     /*
@@ -231,7 +231,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
-        //'Fractal' => GatherContent\LaravelFractal\LaravelFractalFacade::class,
+        'Fractal' => GatherContent\LaravelFractal\LaravelFractalFacade::class,
 
     ],
 

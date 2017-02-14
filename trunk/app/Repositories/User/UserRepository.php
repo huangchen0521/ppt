@@ -3,8 +3,9 @@ namespace App\Repositories\User;
 
 use App\Models\User\UserInfo;
 use App\Repositories\BaseRepository;
+use App\Transformers\UserInfoTransformer;
 use App\Transformers\UserTransformer;
-
+use Fractal;
 
 /**
  * Created by PhpStorm.
@@ -27,6 +28,6 @@ class UserRepository extends BaseRepository implements UserRepositoryContract
     function getUser()
     {
         $users = UserInfo::all();
-        return $this->response->collection($users, new UserTransformer);
+        return Fractal::collection($users, new UserInfoTransformer());
     }
 }

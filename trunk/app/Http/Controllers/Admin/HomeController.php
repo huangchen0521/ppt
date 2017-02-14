@@ -3,15 +3,16 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-
 use App\Models\User\UserInfo;
 use App\Repositories\User\UserRepository;
-use App\Transformers\UserTransformer;
+use App\Transformers\UserInfoTransformer;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Dingo\Api\Routing\Helpers;
+
 class HomeController extends Controller
 {
     use Helpers;
+
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -38,9 +39,6 @@ class HomeController extends Controller
 
     public function home()
     {
-        $users = UserInfo::all();
-        return $this->item($users, new UserTransformer);
-
-      //  return view('admin.home');
+        return view('admin.home');
     }
 }
