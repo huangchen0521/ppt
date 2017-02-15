@@ -18,7 +18,7 @@ class GroupMember extends Migration
             $table->primary('group_id');
             $table->integer('user_id');
             $table->unique(array('group_id', 'user_id'));
-            $table->enum('user_level', array('low', 'middle','high'));//讲话级别
+            $table->enum('speak_level', array('low', 'middle','high'));//讲话级别
             $table->enum('user_level', array('member', 'own','dispatcher'));//member:普通成员；own：群主；dispatcher：调度员
             $table->enum('status', array('normal', 'locked','deleted'));
             $table->timestamps();
