@@ -8,11 +8,10 @@
 
 namespace App\Models\User;
 
-
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
-class UserInfo extends Model
+use Illuminate\Foundation\Auth\User as Authenticatable;
+class UserInfo extends Authenticatable
 {
+
    // use SoftDeletes;
     /**
      * 与模型关联的数据表
