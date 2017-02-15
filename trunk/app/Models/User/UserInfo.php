@@ -13,6 +13,12 @@ class UserInfo extends Authenticatable
 {
 
    // use SoftDeletes;
+
+    /**
+     * 表主键名
+     * @var string
+     */
+    protected $primaryKey = 'group_members_id';
     /**
      * 与模型关联的数据表
      *
