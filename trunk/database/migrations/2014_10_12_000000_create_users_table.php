@@ -8,21 +8,24 @@ class CreateUsersTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     * http://laravelacademy.org/post/6171.html
      * @return void
      */
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('user_id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('phone')->unique();
             $table->string('password');
+            $table->string("imei")->unique();
+            $table->integer("group_id")->unique();
+            $table->mediumText("remark");
             $table->rememberToken();
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *

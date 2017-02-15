@@ -23,7 +23,7 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Admin', 'prefix' => 'admin
 
     //user
     Route::get('/user/users', ['as' => 'users', 'uses' => 'UserController@userList']);
-    Route::get('/user/addUser', ['as' => 'addUser', 'uses' => 'UserController@addUser']);
+    Route::get('/user/addUser/{id?}', ['as' => 'addUser', 'uses' => 'UserController@addUser']);
     Route::get('/user/getUsers', ['as' => 'getUsers', 'uses' => 'UserController@getUsers']);
 
 

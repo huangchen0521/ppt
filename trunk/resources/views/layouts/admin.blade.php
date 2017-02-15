@@ -78,8 +78,12 @@
                             </li>
 
                             <li class="dropdown">
-                                <a href="login.html">
+                                <a href="/logout"  onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
                                     <i class="fa fa-sign-out"></i> 退出
+                                    <form id="logout-form" action="/logout" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                    </form>
                                 </a>
                             </li>
                         </ul>

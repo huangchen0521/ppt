@@ -91,16 +91,9 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">提示</label>
-                                <div class="col-sm-10">
-                                    <input type="text" placeholder="提示信息" class="form-control">
-                                </div>
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="form-group">
                                 <div class="col-sm-4 col-sm-offset-2">
                                     <button class="btn btn-primary" type="submit">保存用户</button>
-                                    <button class="btn btn-white" type="submit">取消</button>
+                                    &nbsp;&nbsp;<button class="btn btn-white" type="reset">取消</button>
                                 </div>
                             </div>
                         </form>
@@ -116,6 +109,9 @@
     <script type="application/javascript">
         $(document).ready(function () {
             $(".i-checks").iCheck({checkboxClass: "icheckbox_square-green", radioClass: "iradio_square-green",});
+            $(".btn-white").bind('click',function () {
+                window.location.href = "{{route('users')}}";
+            });
         });
         $.validator.setDefaults({
             highlight: function (e) {

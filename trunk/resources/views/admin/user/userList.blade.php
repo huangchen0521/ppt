@@ -30,27 +30,27 @@
             $(".dataTables_list").dataTable({
                 "serverSide": true,//开启服务器获取数据
                 "ordering": false,
-                "processing":false,
+                "processing": false,
                 "lengthChange": false,
-                "searching":true,
+                "searching": true,
                 "pageLength": 10,
                 "ajax": { // 获取数据
                     "url": "{{route('getUsers')}}",
                     "dataType": "json", //返回来的数据形式
-                    "dataSrc":"data",
+                    "dataSrc": "data",
                     /*
-                    data: function (d) {//d 是原始的发送给服务器的数据，默认很长。
-                        var param = {};//因为服务端排序，可以新建一个参数对象
-                        param.start = d.start;//开始的序号
-                        param.length = d.length;//要取的数据的
-                        /*
-                        var formData = $("#filter_form").serializeArray();//把form里面的数据序列化成数组
-                        formData.forEach(function (e) {
-                            param[e.name] = e.value;
-                        });
-                        return param;//自定义需要传递的参数。
-                    },
-                  */
+                     data: function (d) {//d 是原始的发送给服务器的数据，默认很长。
+                     var param = {};//因为服务端排序，可以新建一个参数对象
+                     param.start = d.start;//开始的序号
+                     param.length = d.length;//要取的数据的
+                     /*
+                     var formData = $("#filter_form").serializeArray();//把form里面的数据序列化成数组
+                     formData.forEach(function (e) {
+                     param[e.name] = e.value;
+                     });
+                     return param;//自定义需要传递的参数。
+                     },
+                     */
                 },
                 "sEmptyTable": "数据为空",
                 "columns": [ //定义列数据来源
@@ -87,6 +87,9 @@
                 function () {
                     swal("删除成功!", "您已经永久删除了这条信息!", "success");
                 });
+        }
+        function edit(id) {
+            window.location.href = "{{route('addUser')}}/" + id;
         }
     </script>
 @endsection
